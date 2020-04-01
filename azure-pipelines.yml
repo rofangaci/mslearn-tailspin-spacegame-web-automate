@@ -78,10 +78,9 @@ stages:
     steps:
     - script: |
         # Exit when any command returns a failure status.
-        # add comments for testing
         set -e
 
-        # Write terraform.tfvars.
+        # Write terraform.tfvars. 
         echo 'resource_group_location = "'$(ResourceGroupLocation)'"' | tee terraform.tfvars
         # Write backend.tfvars.
         echo 'resource_group_name = "rg-tf-storage"' | tee backend.tfvars
