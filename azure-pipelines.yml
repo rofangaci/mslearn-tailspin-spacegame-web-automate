@@ -78,6 +78,7 @@ stages:
     steps:
     - script: |
         # Exit when any command returns a failure status.
+        # add comments for testing
         set -e
 
         # Write terraform.tfvars.
